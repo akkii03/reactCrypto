@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 export function numberWithCommas(x) {
     // function is to add , after 3 digit
     // on currency price
-    return x.toString().replace(/\B(?=(d{3})+(?!\d))/g,",");
-}
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 export default function Carousel() {
     
 const [items,setItem] = useState();
