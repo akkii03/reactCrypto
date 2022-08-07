@@ -45,6 +45,87 @@
   background-color: #131111;
 }
 
+.container{
+  display: flex;
+}
 
+.sidebar{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-right: 2px solid grey;
+}
+
+@media screen and (max-width:992px) {
+   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .sidebar{
+    width: 100%;
+   }
+
+   .marketData{
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .containerCoinInfo{
+    width: 100%;
+    margin-top: 0px;
+    padding: 20px;
+    padding-top: 0px;
+   }
+}
+
+@media screen and (max-width:767) {
+  .marketData{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:576) {
+  .marketData{
+    align-items: start;
+  }
+}
+
+.heading{
+  font-weight: bold;
+  margin-bottom:20px ;
+  font-family: "Montserrat";
+}
+
+.description{
+  width: 100%;
+  font-family: "Montserrat";
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  text-align: justify;
+}
+
+.marketData{
+  margin-top: 20px;
+  align-self: start;
+  padding: 25px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.containerCoinInfo{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+}
 
 
