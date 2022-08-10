@@ -94,7 +94,8 @@ export default function Coinpage() {
 
       {/* char component */}
 
-      <CoinInfo coin={id} />
+
+      <CoinInfo id={coin.id} />
     </div>
   );
 }
